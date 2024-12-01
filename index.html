@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wehelp 報名表</title>
+    <link rel="stylesheet" type="text/css" href="public/index.css"/>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wehelp 第六屆申請表</h1>
+
+        <section>
+            <h3>Q1:個人簡介和申請動機。</h3>
+            <hr/>
+            <div class="answer">
+                <span>A1:</span>
+                <button onclick="chang1()">個人簡介</button>
+                <button onclick="chang2()">申請動機</button>
+                <div id="about" class="son-style">
+                    <img src="img/1000003532.jpg" alt="my" class="img-my">
+                    <p>Hello~ 我叫正杰!!<br/>
+                        我畢業於修平科技大學，目前任職於萌陽農業科技，擔任莊園助理兼資訊管理人員，主要負責處理公司中所有硬體設備、網站的問題，透過WordPress為公司從0>>>1打造電商網站提供維護並更新。
+                        我的個性喜歡挑戰困難以及新事物，享受成長的感覺同時也喜歡感知並攫取生活中的每個美好剪影，在挑戰自我的過程也學習享受生活。</p>
+                </div>
+                <div id="Application-motivation" class="son-style">
+                    <p>
+                        &emsp;&emsp;關於申請動機，我認為Wehelp的訓練方式非常符合我的需求，透過給予目標，並給予些微引導，且在我進入死胡同時，有人可以與我一起討論，是我現階段所需要的，讓我有壓力的同時還能能夠自己思考，而不是以傳統的跟著老師寫離開老師就都毫無想法；
+                        另外WeHelp的收費相較於其他同類型的Bootcamp相對親民；以上就是我想要申請Wehelp的主要動機。
+                        <br/>
+                        <br/>
+                        &emsp;&emsp;另外，我必須先坦承，在去年申請WeHelp時確實是被軟體工程師那令人稱羨的高薪及工程師頭銜所吸引，以走捷徑的心態成為人人羨慕的工程師；在經過接近一年的沉澱及持續不斷的接觸及學習軟體工程的各類技術後，我的想法已經大大改變，
+                        我認為我的動機已經不是為了高薪與頭銜了，而是轉變成了我在享受寫程式與解決問題的思考過程，不管是學習程式的過程或者是讓一個簡單的系統從0到1的思考過程又或者是遇到BUG不斷翻找論壇與問爆GPT最終解決BUG的成就感，這一切的一切都令我沉醉其中；
+                        現在我可以很肯定的跟您表示，我的動機中絕對有一項是我喜歡、享受寫程式的過程，我想透過WeHelp打好我的基礎讓我有一個扎實的開頭，這樣我才能在這個領域持續不斷的鑽研，不斷地走下去。這也是我想申請Wehelp的動機之一。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q2:曾經做過哪些軟體工程技術相關的學習？若有作品請分享給我們。</h3>
+            <div class="answer">
+                <span>A2:</span>
+                <button onclick="FrontEnd()">前端學習</button>
+                <button onclick="BackEnd()">node.js會員登入及留言系統</button>
+                <button onclick="python()">python數據分析及機器學習</button>
+                <button onclick="other()"> 其他</button>
+                <div id="Front-end" class="son-style">
+                    <p>前端的部分，有學習 HTML 、 CSS 與 JavaScript ，並透過三者結合做了一個小型前端網站在底部附上聯結。
+                        <h4>前端各項技術的學習及功能實現</h4>
+                        <ul>
+                            <li>HTML 的部分學習了各個標籤的使用，並完成了結構化的網頁；在作品網站中HTML完成了網站的結構化與表單的設計。</li>
+                            <li>CSS 的部分學習了如何使用各項屬性，完成網站的各項美術設計；在作品網站中， CSS 完成了 RWD 與版面設計。</li>
+                            <li>JavaScript 的部分學習了 JavaScript 的基礎語法，完成一些互動設計；在作品網站的部分使用了 HTML DOM 完成按鈕的互動設計。</li>
+                        </ul>
+                        <span>我的前端作品:</span>
+                        <a href="https://aizenda.github.io/JavaScript/" target="_blank">
+                            <img src="img/github.png" alt="GitHub" class="img">
+                        </a>
+                    </p>
+                </div>
+
+                <div id="Back-end" class="son-style">
+                    <p>後端的部分，有學習 Node.js 、 MongoDB 架設小型伺服器，並結合前端做了一個小型留言板網站，在底部附上聯結。
+                        <h4>後端各項技術的學習及功能實現</h4>
+                        <ul>
+                            <li>Node.js的部分學習了套件管理(NPM)、 Express 、 MongoDB 的串接等；在作品網站中完成了本機伺服器架設、後端路由、邏輯、資料庫串接等等處理。</li>
+                            <li>MongoDB的部分學習了如何建立資料庫與集合並透過 require 載入 mongodb 進行資料庫操作；在作品網站中完成了結合 mongodb 模組建立資料庫與集合，並用邏輯運算查詢資料是否存在，以便後端邏輯處理。</li>
+                        </ul>
+                        <span>我的後端作品:</span>
+                        <a href="https://github.com/Aizenda/Node.JS/tree/social_networking_system" target="_blank">
+                            <img src="img/github.png" alt="GitHub" class="img">
+                        </a>
+                    </p>
+                </div>
+
+                <div id="python" class="son-style">
+                    <p>Python的部分，學習了數據分析、簡單網路爬蟲、簡單影像辨識、簡單機器學習。
+                        <h4>Python各項技術的學習及作品</h4>
+                        <ul>
+                            <li>數據分析部分，學習透過 Numpy 、 Pandas 、 Matplotlib 等庫完成數據的清理、分析並視覺化。</li>
+                            <li>網路爬蟲部分，學習透過 BeautifulSoup 、 Selenium 等庫，並結合些許前端知識，繞過反爬且遵循網站規則的情況下抓取網站資料。</li>
+                            <li>影像辨識部分，學習 OpenCV 實現圖像的二值、膨脹、侵蝕、切割最後透過模板匹配來達成辨識。</li>
+                            <li>機器學習部分，學習清理資料加上 scikit-learn 及其他的庫完成特徵篩選、數據降維、資料分割、模型訓練、模型效力評估等等。</li>
+                        </ul>
+                        <h4>Python作品:</h4>
+                        <ul>
+                            <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/Analysis" target="_blank">數據分析作品</a></li>
+                            <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/web%20crawler" target="_blank">網路爬蟲作品</a></li>
+                            <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/Image%20Recognition/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98" target="_blank">影像辨識作品</a></li>
+                            <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/Machine%20Learning" target="_blank">機器學習作品</a></li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div id="other" class="son-style">
+                    <p>除了前面提到的部分，我還學習了如何用MySQL、WordPress、GitHub;WordPress的部分架設一個有實際使用的電商平台(由於內部技術因素，網站暫時停用)。
+                        <h4>WordPress與MySQL架站技術</h4>
+                        <ul>
+                            <li>WordPress的部分我學習了從伺服器架設、域名設定、版面設計、金流串接、SSL設定等等。(由於已停用我用部分圖片代替網站並提供內部測試網址，佐證網站是我開發的)</li>
+                            <li>MySQL的部分我學習了基本的 CUDR 、資料庫正規化等等</li>
+                        </ul>
+                        <h4>WordPress作品:</h4>
+                        <figure class="image-gallery">
+                            <div class="image-item">
+                                <img src="img/image.png" alt="首頁" class="img-wp"">
+                                <figcaption>首頁</figcaption>
+                            </div>
+                            <div class="image-item">
+                                <img src="img/image3.png" alt="購物車頁面" class="img-wp">
+                                <figcaption>購物車頁面</figcaption>
+                            </div>
+                            <div class="image-item">
+                                <img src="img/image4.png" alt="資料庫頁面" class="img-wp">
+                                <figcaption>資料庫頁面</figcaption>
+                            </div>
+                            <div class="image-item">
+                                <img src="img/image5.png" alt="後臺訂單頁面" class="img-wp">
+                                <figcaption>後臺訂單頁面</figcaption>
+                            </div>
+                        </figure>
+                        
+                        <ul>
+                            <li>
+                                <a href="https://myf-taiwan.com" target="_blank">內部測試站網址(經過前公司董事長、主管同意)</a>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q3:如果參與這個訓練，會怎麼安排學習時間？</h3>
+            <div class="answer">
+                    <span>A3:</span>
+                    <button onclick="first()">學習時間安排 & 周學習時間表</button>
+                    <button onclick="second()">第一階段詳細學習時間</button>
+                    <div  id="first" class="son-style">
+                        <h4 style="text-align: center;">學習時間安排</h4>
+                        <p>
+                            &emsp;&emsp;在學習時間的安排上，每周預計花費70~84小時，平均每日10~12小時(不包含休息時間)；每周分配任務的當天，我會花3~4小時做粗略了解目標知識、查找學習資源、詳細規劃當周計畫，在完成這些後，我會查看上禮拜任務有哪邊沒有完成或需要改進，利用剩餘的時間來完成與改進；如果上禮拜任務完成得很成功，我將會把剩餘的時間用來預先學習隔天所需要學習的內容。
+                            <br/>
+                            <br/>
+                            &emsp;&emsp;接下來六天會遵循第一天所做的規劃分配學習時間，會分成三個時間區間學習，分別是8:00~12:00、13:00~1700、17:30~21:30，每四個小時為一個學習區間，每個學習區間中會穿插0.5~1小時的休息時間；
+                            預計會花6~8小時學習當日所需的知識加上目標知識的延伸，並花3~5小時將學習到的知識複習一遍，由於我認為在實作結合複習可以極大的增強我的記憶，所以我會嘗試著將所學的知識融入到練習中並每天產出一個簡單的小專案，以達成邊做邊加深印象的目的，最後每天的最後半小時我會撰寫我的每日進度。
+                            <br/>
+                            <br/>
+                            &emsp;&emsp;如果學習進度超前，我將會將多餘的時間拿來複習或是額外學習任務外的知識，比如我對 Golang 與 Gin 框架有興趣，所以第一階段如有多餘時間我將學習 Golang 與 Gin 框架；如果學習進度不達標，我將會每日額外多花3~4小時(每周91~105小時)的時間，盡力完成所需進度。
+                            <br/>
+                            <br/>
+                            &emsp;&emsp;由於我對於第一階段所需目標知識較熟悉，已經安排好第一階段八周的時間該如何練習與該做什麼，這邊會附上。
+                        </p>
+                        <h4 style="text-align: center;">周學習時間表(理論上)</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day/Time</th>
+                                    <th>&emsp;8:00 - 9:50</th>
+                                    <th>10:00 - 12:00</th>
+                                    <th>12:00 - 13:00</th>
+                                    <th>13:00 - 17:00</th>
+                                    <th>17:00 - 17:30</th>
+                                    <th>17:30 - 21:30</th>
+                                    <th>21:30 - 22:00</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>星期一</td>
+                                    <td>會議前準備 & 上週進度總結</td>
+                                    <td>WeHelp 線上會議</td>
+                                    <td>吃飯、短暫休息</td>
+                                    <td>當周任務整理、查詢、分配</td>
+                                    <td>吃飯、洗澡、短暫休息</td>
+                                    <td>今日學習+每日小型實作+問題查詢與討論</td>
+                                    <td>紀錄當日進度</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day/Time</th>
+                                    <th>&emsp;8:00 - 12:00</th>
+                                    <th>12:00 - 13:00</th>
+                                    <th>13:00 - 17:00</th>
+                                    <th>17:00 - 17:30</th>
+                                    <th>17:30 - 21:30</th>
+                                    <th>21:30 - 22:00</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>星期二~星期六</td>
+                                    <td>學習資料查詢+學習</td>
+                                    <td>吃飯、短暫休息</td>
+                                    <td>學習+目標知識延伸</td>
+                                    <td>吃飯、洗澡、短暫休息</td>
+                                    <td>複習+每日小型實作+問題查詢與討論</td>
+                                    <td>紀錄當日進度</td>
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day/Time</th>
+                                    <th>&emsp;8:00 - 12:00</th>
+                                    <th>12:00 - 13:00</th>
+                                    <th>13:00 - 17:00</th>
+                                    <th>17:00 - 17:30</th>
+                                    <th>17:30 - 21:30</th>
+                                    <th>21:30 - 22:00</th>
+                                    <th>22:00 - 23:00</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>星期日</td>
+                                    <td>學習資料查詢+學習</td>
+                                    <td>吃飯、短暫休息</td>
+                                    <td>學習+目標知識延伸</td>
+                                    <td>吃飯、洗澡、短暫休息</td>
+                                    <td>複習+每日小型實作+問題查詢與討論</td>
+                                    <td>紀錄當日進度</td>
+                                    <td>當周學習總結+隔日會議準備</td>
+                                </tr>
+                            </tbody>
+                        </table>   
+                    </div>
+                    <div  id="second" class="son-style">
+                        <h4>第一階段詳細學習時間</h4>
+                        <ul>
+                            <li>
+                                <span>事前準備:</span>在開始前的前一個月，我會預習 FastAPI(看官方文件)並將 HTML 、 CSS 、 JavaScript 、 Python 、 MySQL 的基本語法再複習一遍，確保能在 Bootcamp 開始時有足夠的基本功。
+                            </li>
+                            <li>
+                                <span>第一周:</span>加強前端的練習如切版 RWD 等等，練習方法是做一些參考各大網站的面板設計，並嘗試用自己的方法完成版面的配置。
+                            </li>
+                            <li>
+                                <span>第二周:</span>  JavaScript 與 Python 的語法練習，目的是加強對語法的理解。練習的方法是在 LeetCode 上刷題。
+                            <li>
+                                <span>第三周:</span>我會透過 Python(FastAPI) 、 JavaScrip(Fetch API) 練習網路連線與資料運用。
+                            </li>
+                            <li>
+                                <span>第四周:</span>開始我會練習架設 FastAPI 網站後端伺服器與 MySQL 伺服器。
+                            </li>
+                            <li>
+                                <span>第五周:</span> 開始發想會員系統開發可能會用到的功能，並針對各項功能進行實作。
+                            </li>
+                            <li>
+                                <span>第六周~第七周:</span>會員系統前後端整合，第七周收尾。
+                            </li>
+                            <li>
+                                <span>第八周:</span>處理前七周未完成事務，預習下階段所需知識(資料庫設計、 AWS)。
+                            </li>
+                            <li><span>多餘時間安排:</span>假如各周有多餘時間，我想學習 Golang 與 Gin 框架。</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q4:軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A4:</span>
+                    <br/>
+                    <p>
+                        <span>如何選擇投入的領域:</span>
+                        <br/>
+                        &emsp;&emsp;在軟體技術快速變更的當下，我在選擇學習新技術，或是選擇投入新領域時，我會做幾件事，具體如下:
+                        <ul>
+                            <li>
+                                <span>觀察就業市場:</span>當一個新興領域或技術正在崛起，在具有一定的市場價值情況下，便會很直觀的反映在就業市場上，
+                                當就業市場規模逐漸龐大時，那表示就業市場有著這樣的技術需求，那麼短時間內的回報以及未來的成長是可以期待的。
+                            </li>
+                            <li>
+                                <span>技術社群的討論趨勢:</span>如果一個新技術在社群中引起大量討論，且參與者來自不同背景的專業人士，這表示該技術已經吸引了足夠的關注，並且具備了發展的潛力。
+                                觀察像是 GitHub、Stack Overflow 等平台的討論情況，可以幫助我們了解技術的熱度和普及程度。
+                            </li>
+                        </ul>
+                        <span>何確定選擇投入的領域是正確有回報的？:</span>
+                        <br/>
+                        &emsp;&emsp;至於如何確認投入的領域是正確有回報的，這部分我的想法是在還沒真正地投入進去之前，沒有人知道會發生什麼，所以我認為應該要注重在當下，以我自己為例，我想要轉職那麼轉職成功便是我期望的回報，
+                        而轉職過程中的學習的技術對於我來說，就是正確的，就是這些技術的積累，成就我的轉職成功，所以我認為重點不是所選擇的技術的領域，而是這些技術與領域能不能達成我要的回報；而且在技術更迭如此快速的時代，
+                        很有可能學習的當下，這項技術就已經逐漸走向沒落了，在這前提下技術選擇反而不重要，而是持續不斷接觸新的領域、新的技術，不斷地跟進，才是在軟體領域站穩腳跟的唯一真理。
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q5:請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A5:</span>
+                    <br/>
+                    <p>
+                        <span>
+                            &emsp;產生負面情緒的事:
+                        </span>
+                        <p>
+                            公司是一個農場，所以會有繁重的種植工作，而我一開始也是應徵農場助理，自然也需要分擔這些外務工作，但後來我有向主管表明，我正在學習網站的相關知識，剛好公司也需要一個對外的電商網站來銷售產品，我便轉調成了農場內的唯一一個資訊人員，主要負責電商官網的開發，
+                            由於任務性質的轉變，我從外務人員變成了辦公室人員，轉折點也是由此開始，由於外務的勞動量真的太大，所以外務的同仁，也會漸漸地開始抱怨說，我為什麼不需要出去分擔外務的工作，但這些由於我比較遲鈍，並沒有覺得有什麼異樣，對人我依舊笑臉相迎，直到某次，
+                            我被主管請去開一個關於網站開發進度的會議，在一間隔音不太好的房間內，隔壁就這麼剛好，就是茶水間，會議進程到一半時，剛好是外務同仁的休息時間，可能他們以為我開會，需要離開公司，認為我不在公司內，便開始討論起了我，他們從一開始的寒暄客套，講到了我調轉內務的事，
+                            再講到我是因為不想做外面比較勞累的工作任務，再到最後的惡言惡語，我都有聽到，這件事讓我很受傷，我明明也很努力，把要所以有不會的東西，好好學起來，幫公司建立一個好的銷售管道，也花了很多時間，與主管什至是總經理開會，也背負了不少壓力，為什麼他們可以這樣隨意的評斷我!!
+                        </p>
+                        <br/>
+                        <br/>
+                        <span>
+                            &emsp;如何處理該情緒:
+                        </span>
+                        <p>
+                            首先，我是一個情緒來的快去得也快的人，所以只要給我一點時間或有什麼東西分散了我的注意，就能很快地脫離低潮的情緒，另外我很常在跟朋友抱怨的時候，講著講著就忽然發現事情並沒有想像的那麼糟糕，也就自然而然地走出來了；
+                            所以綜合以上幾點，我對於負面情緒我會採取以下兩種策略。
+                            <br/>
+                            <ul>
+                                <li>
+                                    <span>尋找情緒的宣洩口:</span>比如，與朋友抱怨，他們能提供不同的觀點和建議，幫助我釐清自己的情緒，並讓我意識到或許問題並不是完全由我造成的。多數時候，將事情說出來能有效地減輕我的負面情緒，而他們提出的不同觀點也能讓我看到問題的多面性。
+                                </li>
+                                <li>
+                                    <span>轉移注意力:</span>比如，運動，透過全神貫注的運動，專注於調整呼吸以及注意自身身體的狀況來轉移大腦的注意力，並且運動會分泌多巴胺等物質，可以有助於放鬆身心，減少壓力，運動完後負面情緒自然會平復不少。
+                                </li>
+                            </ul>
+                        </p>
+                        <span>
+                            &emsp;正視問題，並解決:
+                        </span>
+                        <p>
+                            這邊提一個與題目無關，但我認為很重要的看法，我認為會產生負面情緒，必然會有一個相對應的問題，所以事情如果在可以處理的範圍內，那正視產生負面情緒的問題，並解決掉問題，也算是一種從根本上解決負面情緒的方法；我描述的產生負面情緒的根本原因是農場人手不足，
+                            造成外務同仁的任務加重，所以我的解決方法是我向主管提出我每天都會撥出2~3小時支援外務，執行後外務同仁對我的埋怨確實小了很多，我再也沒有因為他們開我副本而產生負面情緒；所以從根本上解決問題，也不失為一種處理負面情緒的方法。
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q6:關於這份申請網頁，分享一個開發時的技術心得。</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A6:</span>
+                    <br/>
+                    <p>
+                        &emsp;&emsp;如您所見，我這份申請網頁，有很多點擊按鈕顯示不同內容的互動設計，這是透過JavaScript操作HTML DOM達成的，接下來我會以問題二的圖片放大為例子，我會分成兩個部分說明，第一部分是我的思考邏輯，第二部分是我會貼上程式碼，詳盡說明我運用了什麼達成了圖片放大的效果，
+                        但在此之前我會先以我的見解簡單說明什麼是HTML DOM。
+                        <br/>
+                        <br/>
+                        <span>什麼是HTML DOM?</span>
+                        <br/>
+                        <p>
+                            &emsp;&emsp;HTML DOM 全名是 HTML Document Object Model，HTML DOM 將 HTML 文檔表示為一個樹狀結構，其中每個 HTML 元素（如 &lt;div&gt;, &lt;p&gt;, &lt;a&gt;等）都被視為一個節點，並且允許通過程式語言（如 JavaScript）來動態讀取和修改這些節點。
+                            依據我的理解就是把 Document 轉換成 Object ，讓 JavaScript 能夠透過操作 Object 的方式操作 Document ， DOM 是瀏覽器與 HTML 文件之間的橋樑，JavaScript 必須依賴 DOM這個橋梁來改變或讀取頁面內容，
+                            以下是JavaScript 可以透過 DOM 來完成的事(包括但不限於):
+                            <ul>
+                                <li>改變頁面的結構</li>
+                                <li>修改元素的屬性</li>
+                                <li>更新元素的內容</li>
+                                <li>處理用戶互動</li>
+                            </ul>
+                        </p>
+                        <span>圖片該如何放大的思考邏輯:</span>
+                        <br/>
+                        <p>
+                            &emsp;&emsp;首先我的頁面上有幾張圖片，有設定圖片大小限制，形成了縮圖的效果，但圖片太小了，站在用戶的立場，會希望圖片可以盡可能大，這樣才能簡單不費眼力的看到圖片的詳細內容，但站在我的立場，我會希望圖片能夠在不引響我的排版的前提下，盡可能詳盡的呈現給用戶，
+                            所以我想到了其他網頁中點擊圖片放大圖片的功能，我就先以用戶的立場分析，用戶要得到放大圖片會有什麼步驟，所以我得到了這幾個步驟:用戶點擊縮圖&rarr;圖片放大&rarr;用戶點擊大圖外的其他地方，關閉圖片，得到用戶的操作步驟後，我便以工程的角度思考，該怎麼達成。
+                            <br/>
+                            <br/>
+                            &emsp;&emsp;我創建了一個 function 可以在 HTML 載入完成後，可以依據圖片帶的特殊屬性找到圖片，並讓圖片處於待機狀態，隨時等待用戶點擊，當用戶點擊後，我要怎麼判斷用戶已經經過點擊了呢?這部分我使用了事件偵測來偵測滑鼠點擊事件，
+                            接著圖片會放大，而圖片放大的過程會有幾個前提條件，第一點需要一個空間能夠放置我放大的完整圖片，第二點修改圖片顯示大小並顯示，第三點第二次點擊偵測關閉圖片，我便依照幾個步驟建立了幾個 function，可以偵測用戶點擊，然後透過 DOM ，創建一個&lt;div&gt;容器用來存放大的原圖，
+                            最後修改圖片上的 CSS 解除圖片大小限制用原圖並加入預先寫好的顯示屬性( 預設display: none;改成了 display: flex;)，來達成放大的效果，最後的最後，用戶第二次點擊，將關閉圖片空間，這是使用 DOM 刪除了顯示屬性( display: flex;)。
+                        </p>
+                        <br/>
+                        <span>程式碼詳解:</span>
+                        <br/>
+                        <br/>
+                        <pre><code>
+                            document.addEventListener("DOMContentLoaded", () => {
+
+                                const thumbnails = document.querySelectorAll(".img-wp");
+                                const modal = document.createElement("div");
+                                const img = document.createElement("img");
+
+                                modal.classList.add("modal");
+                                modal.appendChild(img);
+                                document.body.appendChild(modal);
+                        </code></pre>
+                        <br/>
+                        <p>
+                            &emsp;&emsp;這段程式碼做了幾件事，等待 HTML 的文本載入觸發&rarr;回呼函式&rarr;找到對應 class 屬性的圖片&rarr;建立 div與img 標籤；這裡我建立了一個監聽事件用來監聽DOMContentLoaded(HTML文本載入)事件，會這樣做是因為我希望在HTML文本載入完成後，就先把顯示大圖所需要的環境建置完成，而不是在偵測到滑鼠事件時(onclick)再創建環境
+                            ，因為每有一次滑鼠事件，他就會創建一個新的環境，造成不必要的空間與時間複雜度。
+                        </p>
+                        <br/>
+                        <br/>
+                        <pre><code>
+                                const open = (thumbnail) => {
+            
+                                    const fullSizeUrl= thumbnail.getAttribute("src");
+                                    img.src = fullSizeUrl;
+                            
+                                    img.classList.add("fullSize");
+                                    modal.classList.add("show");
+                                };
+                            
+                                const close = () => {
+                                    modal.classList.remove("show");
+                                    img.classList.remove("fullSize");
+                                };
+                            
+                                modal.addEventListener("click", close);
+                            
+                                thumbnails.forEach(thumbnail => 
+                                    thumbnail.addEventListener("click", () => open(thumbnail))
+                                );
+                            });
+                        
+                            
+                        </code></pre>
+                        <br/>
+                        <p>
+                            &emsp;&emsp;接下來我建立幾個 function 分別對應用戶的操作，用forEach方法將每張圖片都加上點擊事件偵測，當事件偵測被觸發便會暫存 thumbnail 的值， 這時 open function觸發，然後透過閉包(Closure)的特性，
+                            將 thumbnail 傳出帶入到 open(參數)中；open 接受到參數便會透過 DOM 獲取圖片的連結並在 div 列中加入顯示 CSS img對應的 CSS 是修改圖片長寬屬性，從而達到放大的效果，當用戶再次點擊，
+                            modal 偵測到被點擊，便觸發 close function 刪除了顯示的 CSS(show)。
+                            <br/>
+                            <br/>
+                            <span>
+                                名詞解釋-閉包(Closure):
+                            </span>
+                            <br/>
+                            <p>&emsp;&emsp;正常情況下，兩個不同的 function 是兩個獨立存在的作用域，簡單點說兩者互不干擾，但當函數"記住"了當下的作用域，並函數內部引用函數外部參數時，就形成了一個閉環，就是閉包(Closure)，
+                                以我的 code 為例:
+                                <br/>
+                                <br/>
+                                <pre><code>
+                                thumbnails.forEach(thumbnail => 
+                                    thumbnail.addEventListener("click", () => open(thumbnail))
+                                );
+                            </code></pre>
+                            </p>
+                            <br/>
+                            <p>
+                            &emsp;&emsp;在這段代碼中，thumbnail 是在每次循環時定義的。每個循環會創建一個新的箭頭函數：() => open(thumbnail)，每個事件監聽器都"記住"了自己的 thumbnail，點擊時能準確獲取對應圖片。，即使循環結束，當用戶點擊某個縮圖時，這個箭頭函數仍然能夠"知道"那個當時的 thumbnail，並將其傳遞給 open() 函數，這時open觸發，完成內部引用外部參數，形成閉環。
+                            <br/>
+                            <br/>
+                            &emsp;&emsp;我做個比喻就是想像你正在寫一封信，你寫好信的內容後，放進信封裡並貼上郵票。然後，你把信放進郵箱。當郵差送信時，信封和內容還是會保留著，即使你已經不在郵箱旁邊了。在這個比喻中：
+                            <br/>
+                            <ul>
+                                <li>箭頭函數就像那封信，它保留著當時的thumbnail（信的內容）。</li>
+                                <li>thumbnail 就是信的內容，它被“記住”並傳遞給後續的操作。</li>
+                                <li>閉包就是函數（信封）保存了外部環境的變數（信的內容）並能在將來的某個時刻使用它。</li>
+                            </ul>
+                            </p>
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q7:如何看待自身工作和整個社會群體的連結關係？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A7:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q8:從上次提出申請至今，多做了哪些努力？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A8:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h3>Q9:其他想要對我們說的事情？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A9:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

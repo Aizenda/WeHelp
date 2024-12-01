@@ -1,0 +1,238 @@
+/* index.css */
+
+body {
+    font-family: "Georgia", sans-serif;
+    background-color: #ced4da; 
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h1:hover{
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #000000; 
+    margin: 15px 0;
+    padding: 10px;
+    position: relative;
+    background-color: #eaf4ff; 
+    border-left: 4px solid #17a2b8; 
+}
+
+h3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px;
+}
+
+.img-my{
+    width: 7em;
+    height: auto;
+    padding: 5px;
+}
+
+.img{
+    width: 7em;
+    height: auto;
+    padding: 5px;
+}
+
+.img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px;
+}
+
+.img-wp{
+    width: 7em;
+    height: auto;
+    padding: 5px;
+}
+
+.img-wp:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px;
+}
+
+
+/* 點擊放大顯示大圖的樣式 */
+.modal {
+    display: none; /* 默認隱藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 背景半透明 */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal.fullSize{
+    max-width: 95%; /* 最大寬度 95% */
+    max-height: 95%; /* 最大高度 95% */
+    width: auto; /* 自動寬度 */
+    height: auto; /* 自動高度 */
+    border: 5px solid white; /* 圖片邊框 */
+    padding: 10px; /* 圖片內邊距 */
+    background-color: black; /* 圖片背景黑色 */
+}
+
+.modal.show {
+    display: flex;
+}
+
+/* 使用 CSS Grid 來排列圖片 */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4列圖片 */
+    gap: 16px; /* 圖片之間的間距 */
+    justify-items: center; /* 圖片水平居中 */
+    align-items: center; /* 圖片垂直居中 */
+}
+
+.image-item {
+    text-align: center;
+}
+
+.answer{
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #dee2e6; 
+    border-radius: 8px;
+    background-color: #fdfdfe; 
+    transition: background-color 0.3s;
+}
+
+.answer:hover {
+    background-color: #d1ecf1; 
+}
+
+span{
+    font-weight:bolder ;
+}
+
+#Application-motivation , #Back-end, #python, #other ,#second ,#third{
+    display: none;
+}
+
+#about{
+    display: flex; 
+    align-items: flex-start;
+}
+
+p{
+    display: inline;
+    margin: 0;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #28a745; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.son-style {
+     
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 5px solid #ffc107; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    letter-spacing:  0.1em;
+    line-height: 24px;
+    height: auto;
+}
+
+.son-style:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5); /* 黃色陰影 */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  thead {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+
+  td {
+    color: #333;
+  }
+    
+  th {
+    width: 150px;
+  }
+
+  td {
+    background-color: #ffffff;
+  }
+  
+  td, th {
+    padding: 15px;
+  }
+
+  tbody tr td {
+    font-size: 14px;
+  }
+  
+  table {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  thead {
+    background-color: #8f9290;
+  }
+
+pre{
+    display: flex;
+    margin: auto;
+    width: 75%;
+    background-color: #ddd;
+    white-space: pre-wrap;  
+    overflow: auto;  
+    box-sizing: border-box;
+
+}
