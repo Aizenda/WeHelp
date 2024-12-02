@@ -9,7 +9,7 @@ const chang2 = ()=>{
     let aboutDiv = document.querySelector("#about");
     let ApplicationMotivationDiv = document.querySelector("#Application-motivation");
     aboutDiv.style.display = "none";
-    ApplicationMotivationDiv.style.display = "flex";
+    ApplicationMotivationDiv.style.display = "block";
 
 };
 
